@@ -5,6 +5,11 @@
 
         <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
             <h1><?php the_title(); ?></h1>
+
+            <div class="blog_post_image">
+                <a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail( 'large' ); ?> </a>
+            </div>
+
             <?php the_content(); ?>
         </div>
 

@@ -31,16 +31,15 @@
             dynamic_sidebar('right-sidebar');
         ?>
 
-        <?php mytheme_pagination(); ?>
-        <div class="pagination justify-content-center" style="margin:20px 0">
-            <ul class="pagination pagination-lg">
-                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
-        </div>
+<!--        <div class="pagination justify-content-center" style="margin:20px 0">-->
+<!--            <ul class="pagination pagination-lg">-->
+<!--                <li class="page-item"><a class="page-link" href="#">Previous</a></li>-->
+<!--                <li class="page-item"><span class="page-link current">1</span></li>-->
+<!--                <li class="page-item"><a class="page-link" href="#">2</a></li>-->
+<!--                <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+<!--                <li class="page-item"><a class="page-link" href="#">Next</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
     </div>
 
 <?php get_footer(); ?>

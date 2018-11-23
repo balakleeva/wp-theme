@@ -12,7 +12,7 @@ function mytheme_setup() {
     ));
 
     add_theme_support('post-thumbnails');
-    set_post_thumbnail_size(730, 446);
+    set_post_thumbnail_size(500, 350);
 
     add_theme_support('html5', array('search_form',
         'comment-form',
@@ -176,7 +176,7 @@ function mytheme_pagination( $args = array() ) {
     if ( !empty($min) && !empty($max) ) {
         for( $i = $min; $i <= $max; $i++ ) {
             if ($page == $i) {
-                $echo .= '<li class="active"><span class="active">' . str_pad( (int)$i, 2, '0', STR_PAD_LEFT ) . '</span></li>';
+                $echo .= '<li class="active"><span class="page-link current">' . str_pad( (int)$i, 2, '0', STR_PAD_LEFT ) . '</span></li>';
             } else {
                 $echo .= sprintf( '<li><a href="%s" class="page-link">%002d</a></li>', esc_attr( get_pagenum_link($i) ), $i );
             }
